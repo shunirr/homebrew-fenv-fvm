@@ -5,21 +5,21 @@
 class FenvFvm < Formula
   desc "FENV-compatible Flutter version management tool using FVM backend"
   homepage "https://github.com/shunirr/fenv-fvm"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.2/fenv-fvm-darwin-amd64.tar.gz"
-      sha256 "624db81b31a3f17d09afa95ac45d26008802e3003b5ba895105ff8f4a61ed30f"
+      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.3/fenv-fvm-darwin-amd64.tar.gz"
+      sha256 "10ab22a4dda05b25424b90061f4fd0c28b3bb11c27060d252e8af17f5e113884"
 
       def install
         bin.install "fenv-fvm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.2/fenv-fvm-darwin-arm64.tar.gz"
-      sha256 "3b617091479bb0117af0ebeec26b7281cf93f06b7aa5b89811bb800f4d115dda"
+      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.3/fenv-fvm-darwin-arm64.tar.gz"
+      sha256 "dba2caec321e3a425b5350b717bea6f2cb2c2a6d73df10a1d9f064342b7a261e"
 
       def install
         bin.install "fenv-fvm"
@@ -29,15 +29,15 @@ class FenvFvm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.2/fenv-fvm-linux-amd64.tar.gz"
-      sha256 "f85eaedd306bd4ee04d7fdfbf2c5d09ef6c32df335e9cecd220fa7c5a819c8f8"
+      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.3/fenv-fvm-linux-amd64.tar.gz"
+      sha256 "4436ffa4c474156350f0efb8191d49004f492c23551b23c2fdf4b91ca0519198"
       def install
         bin.install "fenv-fvm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.2/fenv-fvm-linux-arm64.tar.gz"
-      sha256 "55fb2eee4aba7f21b5e0278bb4c4048ad580a20683b459f76f3f9f81ef7cd5cc"
+      url "https://github.com/shunirr/fenv-fvm/releases/download/v0.0.3/fenv-fvm-linux-arm64.tar.gz"
+      sha256 "8dceebc341e81f33055929ff921fb5863ec8363fc4ca8ec42cc9a4f2ce9fa2a5"
       def install
         bin.install "fenv-fvm"
       end
